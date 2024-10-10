@@ -1,0 +1,148 @@
+.forms_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.form_bar_container {
+  display: flex;
+  align-items: center;
+}
+
+.circle,
+.filled {
+  cursor: pointer;
+  height: 1.4rem;
+  width: 1.4rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.inner_circle {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.bar,
+.filled_bar {
+  flex: 1;
+  height: 4px;
+  background-color: #ccc;
+}
+
+.filled_bar {
+  background-color: var(--blue500);
+}
+
+.filled {
+  border-color: var(--blue500);
+}
+.filled > div {
+  background-color: var(--blue500);
+}
+
+.inner_bar,
+.inner_bar_full {
+  height: 100%;
+  width: 0px;
+  background-color: #ccc;
+  transition: all 0.3s ease;
+}
+.inner_bar_full {
+  width: 100%;
+  background-color: var(--blue500);
+}
+
+.form_bar_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.colored,
+.light {
+  color: var(--blue500);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.light {
+  color: gray;
+}
+
+.form_item textarea,
+input {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.8rem;
+  transition: all 0.2s;
+}
+.form_item input::placeholder {
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.form_item textarea::placeholder {
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: capitalizeA;
+}
+.form_item textarea:focus {
+  border-color: var(--blue500);
+}
+
+.form_item input:focus {
+  border-color: var(--blue500);
+}
+.form_item {
+  padding: 0.4rem 0;
+}
+.form_item label {
+  font-size: 14px;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.form {
+  min-height: 280px;
+  position: relative;
+}
+
+.form_action {
+  background-color: var(--blue500);
+  outline: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100px;
+  padding: 0.6rem 0;
+  position: absolute;
+  bottom: 0;
+}
+.form_action:hover {
+  background-color: var(--blue600);
+}
